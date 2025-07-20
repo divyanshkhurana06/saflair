@@ -16,7 +16,7 @@ yarn-error.log*
 *.sqlite
 *.sqlite3
 saflair.db
-flightpulse.db
+saflair.db
 
 # Build outputs
 dist/

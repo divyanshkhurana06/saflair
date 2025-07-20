@@ -1,4 +1,4 @@
-// Flare Network Integration for FlightPulse Smart Contract Payouts
+// Flare Network Integration for Saflair Smart Contract Payouts
 // This integrates with Flare's blockchain for automatic insurance payouts
 
 const Web3 = require('web3');
@@ -16,7 +16,7 @@ class FlareOracleIntegration {
       openSky: 'https://opensky-network.org/api/states/all'
     };
     
-    // FlightPulse smart contract address (would be deployed on Flare)
+    // Saflair smart contract address (would be deployed on Flare)
     this.contractAddress = '0x...'; // Your deployed contract
     this.contractABI = [
       // Smart contract ABI for automatic payouts

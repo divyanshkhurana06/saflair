@@ -2,10 +2,10 @@ const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
 
 // Create database connection
-const dbPath = path.join(__dirname, '..', 'flightpulse.db');
+const dbPath = path.join(__dirname, '..', 'saflair.db');
 const db = new sqlite3.Database(dbPath);
 
-console.log('🚀 Initializing FlightPulse Database...');
+console.log('🚀 Initializing Saflair Database...');
 
 // Initialize database tables
 db.serialize(() => {
@@ -162,10 +162,10 @@ db.serialize(() => {
 
   // Sample users
   const users = [
-    ['user1', 'CryptoSage', 'sage@flightpulse.io', '$2a$10$hash1', '0x123...abc', 425.5, 28, 156, 94.2],
-    ['user2', 'BlockchainBull', 'bull@flightpulse.io', '$2a$10$hash2', '0x456...def', 389.2, 22, 143, 91.8],
-    ['user3', 'DefiDeep', 'deep@flightpulse.io', '$2a$10$hash3', '0x789...ghi', 356.8, 19, 134, 89.5],
-    ['user4', 'MoonTrader', 'moon@flightpulse.io', '$2a$10$hash4', '0xabc...123', 298.4, 15, 112, 85.3]
+    ['user1', 'CryptoSage', 'sage@saflair.com', '$2a$10$hash1', '0x123...abc', 425.5, 28, 156, 94.2],
+    ['user2', 'BlockchainBull', 'bull@saflair.com', '$2a$10$hash2', '0x456...def', 389.2, 22, 143, 91.8],
+    ['user3', 'DefiDeep', 'deep@saflair.com', '$2a$10$hash3', '0x789...ghi', 356.8, 19, 134, 89.5],
+    ['user4', 'MoonTrader', 'moon@saflair.com', '$2a$10$hash4', '0xabc...123', 298.4, 15, 112, 85.3]
   ];
 
   const userStmt = db.prepare(`

@@ -1,4 +1,4 @@
-# 🔑 API Keys Setup Guide for FlightPulse FDC Integration
+# 🔑 API Keys Setup Guide for Saflair FDC Integration
 
 ## Required API Keys
 
